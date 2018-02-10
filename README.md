@@ -8,7 +8,7 @@ This project is intended for those cases were you need to setup a proxy super fa
 How to Install
 ==============
 
-No real installation needed :) Just clone the project:
+No real installation needed :) Just clone or download the project:
 ```bash
 git clone https://github.com/DokkoGroup/nodeProxy
 ```
