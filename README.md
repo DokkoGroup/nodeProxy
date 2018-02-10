@@ -1,29 +1,32 @@
-#nodeProxy
+nodeProxy
+=========
 
 Super lightweight HTTP and Socks5 proxy servers implemented in nodejs.
 
 This project is intended for those cases were you need to setup a proxy super fast.
 
-###How to Install
+How to Install
+==============
 
 No real installation needed :) Just clone the project:
 ```bash
 git clone https://github.com/DokkoGroup/nodeProxy
 ```
 
-###How to use (on mac or linux)
+How to use (on mac or linux)
+============================
 
 Once you've cloned the repository, just run the script for the server you need.
 
 For HTTP Proxy
-```
+```bash
 cd nodeProxy
 ./httpProxy.sh
 ```
 
 
 For Socks Proxy
-```
+```bash
 cd nodeProxy
 ./socksProxy.sh
 ```
@@ -66,7 +69,45 @@ For help:
 ```
 
 
-###License
+How to use (on windows)
+=======================
+
+Once you've cloned or downloaded the repository, just run the script for the server you need.
+
+For HTTP Proxy
+```bash
+cd nodeProxy/httpProxy
+node httpProxy.js
+```
+
+
+For Socks Proxy
+```bash
+cd nodeProxy/socksProxy
+node socksProxy.js
+```
+
+If you want to change your bind address and listen port, you can add the options PORT and BIND-IP parameters to the commands.
+
+Examples:
+```bash
+node socksProxy.js 1080 127.0.0.1
+node socksProxy.js 8080 0.0.0.0
+node socksProxy.js 8080
+node socksProxy.js
+
+# OR
+
+node httpProxy.js 8080 127.0.0.1
+node httpProxy.js 8000 0.0.0.0
+node httpProxy.js 8000
+node httpProxy.js
+```
+
+
+
+License
+=======
 
 The MIT License (MIT) - [LICENSE.md](LICENSE.md)
 
